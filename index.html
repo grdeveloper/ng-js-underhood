@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body{
+            font-family: Arial, sans-serif;
+            line-height: 2;
+        }
+        [ng-show]{
+            border: 3px solid orangered;
+            margin: 3px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        MiniAngularJS
+    </div>
+
+    <div>
+        Age: <span ng-bind="age * 2"></span>
+        Gender: <span ng-bind="gender"></span>
+    </div>
+
+    <div ng-show="age < 18">
+        Is small!
+    </div>
+
+    <input type="text" ng-model="age">
+    <input type="text" ng-model="age">
+    <input type="text" ng-model="gender">
+
+    <script src="index.js"></script>
+</body>
+</html>
